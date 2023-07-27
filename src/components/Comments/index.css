@@ -1,0 +1,184 @@
+/* Write your CSS here */
+bg-container{
+    min-height: 100vh;
+    display: flex;
+    background-color: #ffffff;
+    background-size: cover;
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+.content-container{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 1140px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding-top:50px;
+    padding-bottom: 20px;
+    
+}
+
+@media (max-width: 576px){
+    .content-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.comments-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.heading{
+    color:  #1e293b;
+    font-family: "Roboto";
+    font-size: 35px;
+}
+.description{
+    color:   #334155;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 576px){
+    .comments-container{
+        width: 90%;
+    }
+}
+
+@media (max-width: 800px){
+    .form-container{
+         margin-right: 20px;
+    }
+}
+.input{
+    border-color:  #cbd2d9;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Roboto";
+    padding: 10px;
+    height: 34px;
+    flex-grow: 1;
+    max-width: 300px;
+    border-radius: 5px;
+    outline: none;
+}
+.input-textarea{
+    border-color:  #cbd2d9;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Roboto";
+    padding: 10px;
+    margin-top: 15px;
+    flex-grow: 1;
+    max-width: 300px;
+    border-radius: 5px;
+    outline: none;
+    
+}
+@media (max-width: 576px){
+    .input{
+        max-width: 98%;
+    }
+    .input-textarea{
+        max-width: 98%;
+    }
+    .heading{
+        margin-bottom: 20px;
+    }
+    .description{
+        margin-top: 20px;
+    }
+}
+.add-comment-btn{
+    background-color: #0284c7;
+    color: #ffffff;
+    font-family: "Roboto";
+    height: 32px;
+    width: 120px;
+    border-radius: 4px;
+    border-width: 0;
+    margin-top: 15px;
+    font-size: 12px;
+}
+.comments-img{
+    width: 50%;
+    max-width: 480px;
+    max-height: 450px;
+    height: 50%;
+    margin-top:12px;
+}
+.comments-medium-device-img{
+    width: 80%;
+}
+
+@media (max-width: 576px){
+    .comments-img{
+        display: none;
+    }
+    
+}
+@media (min-width:576px){
+    .comments-medium-device-img{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    .comments-img{
+        margin-top: 35px;
+    }
+}
+.horizontal-line{
+    width: 90%;
+    max-width: 1100px;
+    margin-top: 1px;
+    padding-top: 1px;
+    background-color:  #cbd2d9;
+    border-width: 0;
+}
+
+.comments{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 1100px;
+    margin: auto;
+}
+.comments-count{
+    color: #334155;
+    font-family: "Roboto";
+    margin-left: 20px;
+}
+.comments-count-span{
+    background-color: #0284c7;
+    font-size: 13px;
+    margin-bottom: 10px;
+    padding: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 2px;
+    color: #ffffff;
+}
+.comments-list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+   margin: auto; 
+    width: 95%;
+    max-width: 1140px;
+    justify-content: center;
+    margin-top: 1px;
+}
+@media (max-width: 576px){
+    .comments-list{
+        width: 90%;
+    }
+}
